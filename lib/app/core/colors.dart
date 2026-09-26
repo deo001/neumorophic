@@ -7,6 +7,9 @@ class CustomColors {
   static const Color whiteColor = Color(0xFFFFFFFF);
   static const Color backgroundColor = Color(0xFFE0E0E0);
 
+  /// Used for validation failures, such as a rejected PIN.
+  static const Color errorColor = Color(0xFFD32F2F);
+
   // fonts colors
   static const Color primaryTextColor = Color(0xFF212121);
   static const Color secondaryTextColor = Color(0xFF757575);

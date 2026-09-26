@@ -55,10 +55,9 @@ class SplashController extends GetxController
 
   Future<void> _startSplashSequence() async {
     await _animController.forward();
-    await Future.delayed(const Duration(seconds: 5));
+    await Future.delayed(const Duration(seconds: 2));
     if (isClosed) return;
-    Get.offAllNamed(Routes.AUTH);
-    // or: Get.offAll(() => const HomeView());
+    Get.offAllNamed(Routes.SHELL);
   }
 
   @override

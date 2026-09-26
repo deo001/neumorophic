@@ -8,6 +8,7 @@ abstract class Routes {
   static const SPLASH = _Paths.SPLASH;
   static const VALIDATE_RECEIPT = _Paths.VALIDATE_RECEIPT;
   static const MORE_SERVICES = _Paths.MORE_SERVICES;
+  static const SHELL = _Paths.SHELL;
 }
 
 abstract class _Paths {
@@ -17,4 +18,5 @@ abstract class _Paths {
   static const SPLASH = '/splash';
   static const VALIDATE_RECEIPT = '/validate-receipt';
   static const MORE_SERVICES = '/more-services';
+  static const SHELL = '/shell';
 }

@@ -1,26 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:neumorophic/app/data/models/service_items.dart';
 
 import '../../../core/colors.dart';
 
-/// A single banking service offered on the More Services screen.
-class ServiceItem {
-  const ServiceItem({
-    required this.label,
-    required this.icon,
-    this.isNew = false,
-  });
 
-  final String label;
-  final IconData icon;
 
-  /// Marks a recently added service with an accent dot.
-  final bool isNew;
-}
-
-/// The services catalogue.
-///
-/// Kept as data so the screen is a list to render, not a hard-coded grid.
 class MoreServicesController extends GetxController {
   static const List<ServiceItem> services = <ServiceItem>[
     ServiceItem(label: 'Transfer', icon: Icons.send_rounded),
@@ -37,10 +22,6 @@ class MoreServicesController extends GetxController {
     ServiceItem(label: 'Locations', icon: Icons.location_on_rounded),
   ];
 
-  /// Opens a service.
-  ///
-  /// None of these destinations exist yet, so the tap is acknowledged instead
-  /// of silently doing nothing.
   void onServiceTap(ServiceItem service) {
     Get.snackbar(
       service.label,

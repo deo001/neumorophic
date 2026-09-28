@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:neumorophic/app/data/models/service_items.dart';
 
 import '../../../core/colors.dart';
 import '../../../core/neumorphic.dart';
